@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#CCF5FF"
+    tools:context="com.example.guoli.myandroid.MainActivity">
+
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:text="留言板"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textSize="24dp"
+    />
+    <ListView
+        android:id="@+id/commentListView"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+    <ImageButton
+        android:scaleType="centerCrop"
+        android:src="@drawable/set"
+        android:id="@+id/toAttributeBtn"
+        android:layout_gravity="right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:focusable="false" />
+    <ImageButton
+        android:scaleType="centerCrop"
+        android:src="@drawable/add"
+        android:id="@+id/toAddBtn"
+        android:layout_gravity="right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:focusable="false" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
